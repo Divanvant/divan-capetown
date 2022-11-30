@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Righteous', monospace;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  overflow: hidden;
+  padding: 2rem;
+  background-color: #cccccc;
+  min-height: calc(100vh - 4rem);
+}
+
+.App .text {
+  margin-bottom: 5rem;
+}
+
+.App .text a {
+  color: #232323;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.App .text a:visited {
+  color: #232323;
+}
