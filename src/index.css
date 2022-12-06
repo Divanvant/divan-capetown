@@ -1,11 +1,21 @@
+:root {
+  --primary-color: #6552f9;
+  --complimentary-color: #ffffff;
+  --main-background-color: #cccccc;
+}
+
 body {
   margin: 0;
-  overflow: hidden;
   font-family: 'Roboto', sans-serif;
+  background-color: var(--main-background-color);
+  line-height: 1.5;
 }
 
 h1 {
   font-family: 'Righteous', monospace;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
 }
 
 code {
@@ -13,23 +23,57 @@ code {
     monospace;
 }
 
-.App {
-  overflow: hidden;
-  padding: 2rem;
-  background-color: #cccccc;
-  min-height: calc(100vh - 4rem);
+header {
+  height: 4rem;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App .text {
-  margin-bottom: 5rem;
+a:visited {
+  color: #222;
+}
+.button:visited {
+  color: var(--complimentary-color);
 }
 
-.App .text a {
-  color: #232323;
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-top: 0;
+}
+
+button,
+.button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  -webkit-appearance: button;
+  outline: none !important;
+  border: none !important;
+  background-color: var(--primary-color);
+  color: var(--complimentary-color);
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
   text-decoration: none;
-  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.App .text a:visited {
-  color: #232323;
+@media print {
+  body {
+    background-color: var(--primary-color);
+  }
+  header,
+  .hidden-for-print {
+    display: none;
+  }
+}
+@page {
+  size: auto;
+  margin: 0;
 }
