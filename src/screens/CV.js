@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import avatar from '../assets/avatar.jpg'
 
@@ -33,8 +33,8 @@ const IconText = ({ iconName, flag, text }) => {
 }
 
 const CV = () => {
-  const [colors, setColors] = useState(['#2409f6', '#ffffff'])
-  const [isVerifiedUser, setIsVerifiedUser] = useState(false)
+  const colors = ['#2409f6', '#ffffff']
+  const isVerifiedUser = false
   const tools = [
     'HTML',
     'CSS',
